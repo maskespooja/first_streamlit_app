@@ -62,7 +62,7 @@ streamlit.stop()
 
 #allow end user to add fruit to list
 def insert_roe_snowflake(new_fruit):
-  with my_cnx.cursor() as my cur:
+  with my_cnx.cursor() as my_cur:
        my_cur.execute("insert into fruit_load_list values ('from streamlit')")
        return "Thanks for adding" + new_fruit
 
